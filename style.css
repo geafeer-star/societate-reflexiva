@@ -104,3 +104,12 @@ a{color:var(--brand);text-decoration:underline}
 .hero-link:hover {
   color: #e0fdfa;          /* alb-verzui, vizibil pe turcoaz */
 }
+.hero-link {
+  color: #ffffff;          /* alb vizibil */
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.hero-link:hover {
+  color: #e0fdfa;          /* alb-verzui elegant */
+}
