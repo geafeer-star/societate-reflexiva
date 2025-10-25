@@ -95,3 +95,12 @@ footer .container{
 
 /* Links in text */
 a{color:var(--brand);text-decoration:underline}
+.hero-link {
+  color: #ffffff;          /* alb pur */
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px; /* spațiu mai modern */
+}
+.hero-link:hover {
+  color: #e0fdfa;          /* alb-verzui, vizibil pe turcoaz */
+}
