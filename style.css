@@ -113,3 +113,156 @@ a{color:var(--brand);text-decoration:underline}
 .hero-link:hover {
   color: #e0fdfa;          /* alb-verzui elegant */
 }
+/* ---------- Reading layout (safe defaults) ---------- */
+.main {
+  padding: 1.25rem 0;
+}
+
+.container {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  line-height: 1.75;
+  font-size: 1.05rem;
+}
+
+.container p {
+  margin: 0.85rem 0;
+}
+
+.container h1 {
+  font-size: clamp(1.6rem, 2.2vw, 2.1rem);
+  line-height: 1.2;
+  margin: 0.25rem 0 0.75rem;
+}
+
+.container h2 {
+  font-size: clamp(1.25rem, 1.6vw, 1.55rem);
+  margin: 2rem 0 0.75rem;
+  line-height: 1.25;
+}
+
+.container h3 {
+  font-size: 1.08rem;
+  margin: 1.25rem 0 0.45rem;
+  line-height: 1.35;
+  opacity: 0.95;
+}
+
+.container ul,
+.container ol {
+  padding-left: 1.25rem;
+  margin: 0.75rem 0 1rem;
+}
+
+/* Optional: nicer section separation without being loud */
+.container section + section {
+  margin-top: 1.5rem;
+}
+
+/* ---------- Footnotes (sup links) ---------- */
+sup[id^="fnref"] {
+  font-size: 0.75em;
+  vertical-align: super;
+  line-height: 0;
+}
+
+sup[id^="fnref"] a {
+  text-decoration: none;
+  padding: 0.05rem 0.35rem;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  opacity: 0.75;
+  transition: opacity 0.15s ease, background-color 0.15s ease, transform 0.15s ease;
+}
+
+sup[id^="fnref"] a:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+/* Good UX: highlight the target note when navigating */
+:target {
+  scroll-margin-top: 90px; /* helps when you have a fixed header */
+}
+
+/* ---------- Notes section ---------- */
+hr {
+  margin: 1.5rem 0;
+  opacity: 0.25;
+}
+
+#notes,
+.container h2 + ol {
+  /* in case you keep <h2>Note</h2><ol> directly */
+}
+
+.container ol li[id^="fn"] {
+  margin: 0.6rem 0;
+  padding: 0.65rem 0.75rem;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.08);
+  background: rgba(0,0,0,0.02);
+}
+
+.container ol li[id^="fn"] a {
+  text-decoration: none;
+}
+
+.container ol li[id^="fn"] a:hover {
+  text-decoration: underline;
+}
+
+/* Backlink "↩" */
+.container ol li[id^="fn"] a[href^="#fnref"] {
+  display: inline-block;
+  margin-left: 0.35rem;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.container ol li[id^="fn"] a[href^="#fnref"]:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+/* Slight emphasis for the external/source link in notes */
+.container ol li[id^="fn"] a[target="_blank"] {
+  font-weight: 600;
+}
+
+/* ---------- Blockquote & emphasis (optional but nice) ---------- */
+.container blockquote {
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  border-left: 4px solid rgba(0,0,0,0.2);
+  background: rgba(0,0,0,0.03);
+  border-radius: 12px;
+}
+
+.container em {
+  opacity: 0.95;
+}
+
+/* ---------- Dark mode polish ---------- */
+@media (prefers-color-scheme: dark) {
+  .container ol li[id^="fn"] {
+    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.06);
+  }
+
+  hr {
+    opacity: 0.2;
+  }
+
+  sup[id^="fnref"] a {
+    opacity: 0.85;
+  }
+
+  .container blockquote {
+    border-left-color: rgba(255,255,255,0.25);
+    background: rgba(255,255,255,0.06);
+  }
+}
+
