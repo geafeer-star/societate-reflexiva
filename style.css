@@ -268,8 +268,8 @@ hr {
 .flag{
   width: 1.1em;
   height: 1.1em;
-  vertical-align: -0.15em;
-  margin-right: 0.35em;
-  border-radius: 0.15em; /* opțional, arată fin */
+  vertical-align: -0.12em;
+  margin: 0 0.4em 0 0.1em;
 }
+
 
