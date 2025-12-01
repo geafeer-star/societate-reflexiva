@@ -278,4 +278,12 @@ hr {
   margin-right: 0.45em;
   border-radius: 0.12em;
 }
+.flag{
+  width: 1.15em;
+  height: 1.15em;
+  vertical-align: -0.12em;
+  margin-right: 0.4em;
+}
+.flag-emoji{ display:none; } /* ca să nu mai apară “RO” */
+
 
