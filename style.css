@@ -285,5 +285,28 @@ hr {
   margin-right: 0.4em;
 }
 .flag-emoji{ display:none; } /* ca să nu mai apară “RO” */
+.motto{
+  margin: .55rem 0 .9rem;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  font-style: italic;
+  opacity: .9;
+  max-width: 70ch;
+}
+
+.motto::before{
+  content: "";
+  display: inline-block;
+  width: .4rem;
+  height: 1.1em;
+  background: rgba(0,0,0,.12);
+  border-radius: 999px;
+  margin-right: .6rem;
+  vertical-align: -0.15em;
+}
+
+@media (prefers-color-scheme: dark){
+  .motto::before{ background: rgba(255,255,255,.18); }
+}
 
 
