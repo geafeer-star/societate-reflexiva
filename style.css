@@ -318,5 +318,22 @@ h1 .flag{ flex: 0 0 auto; }
     background: rgba(206,17,38,.14);
   }
 }
+/* H1: steagul pe același rând cu titlul */
+article header h1{
+  display: flex;
+  align-items: baseline;   /* aliniază pe linia textului */
+  gap: 0.55em;
+  flex-wrap: wrap;         /* permite titlului să curgă frumos pe 2 rânduri */
+  margin: 0;
+}
+
+/* Dimensiune/aliniere steag */
+article header h1 .flag{
+  width: 1.15em;
+  height: 1.15em;
+  flex: 0 0 auto;
+  vertical-align: baseline;
+  transform: translateY(0.08em); /* mic reglaj fin */
+}
 
 
