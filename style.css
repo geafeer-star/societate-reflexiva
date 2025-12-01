@@ -265,4 +265,11 @@ hr {
     background: rgba(255,255,255,0.06);
   }
 }
+.flag{
+  width: 1.1em;
+  height: 1.1em;
+  vertical-align: -0.15em;
+  margin-right: 0.35em;
+  border-radius: 0.15em; /* opțional, arată fin */
+}
 
