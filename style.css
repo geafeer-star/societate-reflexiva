@@ -306,5 +306,17 @@ h1 .flag{ flex: 0 0 auto; }
     background: rgba(255,255,255,.07);
   }
 }
+.badge-dur{
+  border: 1px solid rgba(0,0,0,.14);
+  background: rgba(206,17,38,.06); /* discret spre roșu */
+  font-weight: 700;
+}
+
+@media (prefers-color-scheme: dark){
+  .badge-dur{
+    border: 1px solid rgba(255,255,255,.16);
+    background: rgba(206,17,38,.14);
+  }
+}
 
 
