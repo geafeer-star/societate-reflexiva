@@ -294,19 +294,52 @@ hr {
   max-width: 70ch;
 }
 
-.motto::before{
-  content: "";
-  display: inline-block;
-  width: .4rem;
-  height: 1.1em;
-  background: rgba(0,0,0,.12);
+.motto{
+  margin: .8rem 0 1rem;
+  padding: .85rem 1rem;
+  border-left: 5px solid rgba(0,0,0,.18);
+  background: rgba(0,0,0,.03);
+  border-radius: 14px;
+  max-width: 78ch;
+}
+
+.motto p{
+  margin: 0;
+  font-style: italic;
+  opacity: .92;
+}
+
+.badge-nationala{
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  padding: .5rem .9rem;
   border-radius: 999px;
-  margin-right: .6rem;
-  vertical-align: -0.15em;
+  font-weight: 700;
+  font-size: .98rem;
+  margin: .2rem 0 1.2rem;
+}
+
+.badge-dur{
+  border: 1px solid rgba(0,0,0,.14);
+  background: rgba(206,17,38,.08);
+}
+
+.flag--badge{
+  width: 1.05em;
+  height: 1.05em;
+  border-radius: .12em;
 }
 
 @media (prefers-color-scheme: dark){
-  .motto::before{ background: rgba(255,255,255,.18); }
+  .motto{
+    border-left-color: rgba(255,255,255,.22);
+    background: rgba(255,255,255,.06);
+  }
+  .badge-dur{
+    border: 1px solid rgba(255,255,255,.16);
+    background: rgba(206,17,38,.14);
+  }
 }
 
 
