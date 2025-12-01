@@ -271,5 +271,40 @@ hr {
   vertical-align: -0.12em;
   margin: 0 0.4em 0 0.1em;
 }
+.flag{
+  width: 1.15em;
+  height: 1.15em;
+  vertical-align: -0.12em;
+  margin-right: 0.45em;
+  border-radius: 0.12em;
+}
+h1{
+  display: flex;
+  align-items: baseline;
+  gap: 0.45em;
+  flex-wrap: wrap;
+}
+h1 .flag{ flex: 0 0 auto; }
+.badge-nationala{
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .45rem .75rem;
+  margin: .35rem 0 1rem;
+  border-radius: 999px;
+  font-size: .95rem;
+  font-weight: 600;
+  letter-spacing: .2px;
+
+  border: 1px solid rgba(0,0,0,.12);
+  background: rgba(0,0,0,.03);
+}
+
+@media (prefers-color-scheme: dark){
+  .badge-nationala{
+    border: 1px solid rgba(255,255,255,.14);
+    background: rgba(255,255,255,.07);
+  }
+}
 
 
